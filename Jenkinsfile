@@ -7,13 +7,14 @@ pipeline {
     stages {
       stage ("workspace cleanup"){
           steps {
-          cleanws()
+          cleanWs()
               
       }
       }
      stage ("code checkout"){
         steps {
          git branch: 'main', credentialsId: 'github', url: 'https://github.com/Puneet231/dev'
+         
 
     }
      }
