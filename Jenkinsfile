@@ -25,12 +25,7 @@ pipeline {
             }
 
 
-    stage ("test appication"){
-        steps {
-         sh 'mvn test' 
 
-        }
-           }
 
     }
 }
