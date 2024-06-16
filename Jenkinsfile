@@ -13,7 +13,7 @@ pipeline {
       }
      stage ("code checkout"){
         steps {
-         git branch: 'main', credentialsId: 'github', url: 'https://github.com/Puneet231/dev'
+         git branch: 'main', credentialsId: 'github', url: 'https://github.com/Puneet231/jenkinstest'
          
 
     }
