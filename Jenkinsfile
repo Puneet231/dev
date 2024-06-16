@@ -7,7 +7,7 @@ pipeline {
     stages {
       stage ("workspace cleanup"){
           steps {
-              cleanws()
+          cleanws()
               
       }
       }
@@ -17,14 +17,14 @@ pipeline {
 
     }
      }
-            stage ("build appication"){
+    stage ("build appication"){
         steps {
          sh 'mvn clean package' 
 }
             }
 
 
-           stage ("test appication"){
+    stage ("test appication"){
         steps {
          sh 'mvn test' 
 
